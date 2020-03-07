@@ -1,0 +1,312 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 11, 2020, 8:37:28 AM
+    Author     : FSC
+*/
+body{
+    width: 960px;
+    height: auto;
+    background-color: darkgray;
+    margin: 0 auto;
+}
+#wrapper{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+header{
+    height: 328px;
+    width: 100%;
+    
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: yellow;
+}
+#main-content{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: #D8D8D8;
+    
+}
+article{
+    width: 70%;
+    height: auto; 
+    float: left;
+    border: 1px solid blue;
+}
+aside{
+    width: 29%;
+    height: auto;
+    border: 1px solid blue;
+    float: left;
+}
+#menu{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#menu > ul{
+    background-color: #2E2E2E;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#menu > ul>li{
+    display: inline-block;
+    line-height: 50px;
+    width: 18%;
+    color: #ffffff;
+}
+#menu a{
+    text-decoration: none;
+    display: block;
+    color: #ffffff
+}
+#menu a:hover{
+    background-color: #f1f1f1;
+    color: red;
+}
+#menu li{
+    position: relative;
+}
+.sub-menu{
+    position: absolute;
+    background-color: gray;
+    display: none;
+    width: 77%;
+    z-index: 1;
+}
+.sub-menu li{
+    padding: 0;
+    display: block;
+    margin-left: -40px;
+}
+#menu li:hover .sub-menu{
+    display: block;
+}
+.vmenu{
+    list-style-type: none;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 10px;
+    border: 1px grey solid;
+    box-shadow: 2px 3px grey;
+}
+.vmenu li{
+    border-bottom: 1px gray dashed;
+    padding: 0;
+}
+.vmenu a{
+    text-decoration: none;
+    line-height: 30px;
+    background: url(images/bullet_red.png) no-repeat 1px;
+    padding: 5px 5px 6px 40px;
+    color: black;
+}
+.vmenu a:hover{
+    background: url(images/bullet_yellow.png) no-repeat 1px;
+    background-color: gray;
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+.col-33{
+    width: 31.2%;
+    padding-left: 10px;
+    position: relative;
+    float: left;
+    padding-bottom: 5px;
+}
+.product{
+    border-radius: 15px;
+    border: 2px solid #0B2F3A;
+    
+}
+.product >.image{
+    height: 200px;
+    line-height: 10px;
+    border-radius: 10px
+        
+}
+.product >.name{
+    color: red;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+}
+.product >.price{
+    font-size: 25px;
+    font-weight: bold;
+    color: orange;
+    position: absolute;
+    left: 15px;
+    top: 200px;
+    color:green
+}
+.product >.icons{
+    width: 25px;
+    position: absolute;
+    top: 140px;
+    right: 10px;      
+}
+.product >.new-icon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70px;
+}
+.company-infor{
+    width: 400px;
+    height: 40px;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 30px;
+}
+.company-infor ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+}
+.company-infor ul li{
+    display: inline-block;
+    width: 27%;
+    margin-left: 20px;
+}
+.company-infor ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.company-infor a:hover{color: yellow}
+.infor{
+    width:100%;
+    height:500px;
+    border: 1px solid black;
+    background-color: black
+}
+ul{
+    line-height: 50px;
+    color: white; 
+}
+.box-news{
+    border: 2px solid black;
+    width: 100%;
+    height:auto;
+    padding: 0;
+    margin: 0;
+    
+}
+.box-news-items{
+    width:97%;
+    height:190px;
+    border:1px solid gray;
+    box-shadow: 5px 2px gainsboro;
+    margin: 5px 10px;
+    border-radius:10px   
+}
+.box-news-items img{
+    width:165px;
+    height:185px;
+    margin: 2px;
+    float:left;
+    box-shadow: 1px 1px gray;
+    border-radius: 9px;
+    
+}
+.new-content{
+    width:450px;
+    height:190px;
+    
+    float:left;
+}
+.title-new{
+    margin: 0;
+    border-bottom: 1px black dotted;
+}
+.text-content{
+    text-align: justify;
+    margin: 5px;
+    overflow: hidden;
+    height:140px;
+    
+}
+.title-new a{
+    text-decoration: none;
+}
+.title-new a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.row{
+    width: 93%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border:1px gray solid;
+    box-shadow: 2px 3px yellowgreen;
+    height: auto;
+    background-color: yellowgreen
+}
+.rows{
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border:1px gray solid;
+    box-shadow: 2px 3px yellowgreen;
+    height: auto;
+    background-color: yellowgreen
+    
+}
+.form-control{
+    width:98%;
+    padding:5px; 
+    outline:none ;
+    border:1px solid burlywood; 
+    border-radius:3px;
+}
+.form-group lable{
+    font-weight: bold;
+    font-variant: small-caps
+}
+.form-control:focus{
+    background-color: yellow;
+    box-shadow: 0 0 3px red;
+    border:1px yellow solid;
+}
+.form-buttom{
+     padding:8px 30px; 
+     outline:none ;
+     border:none ;
+     border-radius:20px;
+     font-weight:bold ;
+     background-color:white; 
+     color:orangered ;
+     box-shadow:inset 0 0 20px red
+}.form-buttom:hover{
+    color: blue;
+    box-shadow: inset 0 0 20px blue
+}
+
+
+
